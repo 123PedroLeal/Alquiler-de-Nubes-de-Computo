@@ -60,9 +60,9 @@ public class Mensaje implements Serializable
         return cloud;
     }
 
-    public void setCloud(Nube cloud)
+    public void setCloud(Nube nube)
     {
-        this.cloud = cloud;
+        this.cloud = nube;
     }
 
     public Cliente getClient()

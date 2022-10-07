@@ -17,13 +17,14 @@ public class Nube implements Serializable
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
+    @Column(name = "name",length = 45)
     private String name;
     @Column(name = "brand",length = 45)
     private String brand;
 
-    @Column(name = "year")
+    @Column(name = "years")
     private Integer year;
+
     @Column(name = "description",length = 250)
     private String description;
 
@@ -34,7 +35,7 @@ public class Nube implements Serializable
     /* @JsonIgnoreProperties hace referencia a que cuando me imprima la instacia categoria no me
     imprima otra vez la instancia nube.*/
     @ManyToOne
-    @JoinColumn(name = "idcategory")
+    @JoinColumn(name = "categoryid")
     @JsonIgnoreProperties({"clouds"})
     private Categoria category;
 
@@ -44,7 +45,7 @@ public class Nube implements Serializable
 
     // Cascade sirve para que revise el mapeado de todos los datos que contengan los datos de la nube.
     @OneToMany (cascade = {CascadeType.PERSIST},mappedBy = "cloud")
-    @JsonIgnoreProperties("cloud")
+    @JsonIgnoreProperties({"cloud","messages"})
     public List <Reserva> reservations;
 
     public Integer getId()
