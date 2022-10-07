@@ -23,7 +23,7 @@ public class Cliente implements Serializable
     private String password;
     @Column(name = "name",length = 250)
     private String name;
-    private String age;
+    private Integer age;
 
     /*@ManyToOne sirve para indicar la relación entre la entidad Nube con la entidad categoria en este
     caso que significa que hay muchas categorías en una sola nube.*/
@@ -81,12 +81,12 @@ public class Cliente implements Serializable
         this.name = name;
     }
 
-    public String getAge()
+    public Integer getAge()
     {
         return age;
     }
 
-    public void setAge(String age)
+    public void setAge(Integer age)
     {
         this.age = age;
     }
