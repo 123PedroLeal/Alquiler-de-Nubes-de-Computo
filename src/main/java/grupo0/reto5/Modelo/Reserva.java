@@ -30,16 +30,16 @@ public class Reserva implements Serializable
     @ManyToOne
     @JoinColumn(name = "idcloud")
     @JsonIgnoreProperties({"reservations"})
-    public Nube cloud;
+    public Cloud cloud;
 
     @ManyToOne
     @JoinColumn(name = "idclient")
     @JsonIgnoreProperties({"messages","reservations"})
-    public Cliente client;
+    public Client client;
 
     @OneToOne
     @JsonIgnoreProperties("reservations")
-    public Calificacion score;
+    public Score score;
 
     public Integer getIdReservation()
     {
@@ -81,32 +81,32 @@ public class Reserva implements Serializable
         this.status = status;
     }
 
-    public Nube getCloud()
+    public Cloud getCloud()
     {
         return cloud;
     }
 
-    public void setCloud(Nube nube)
+    public void setCloud(Cloud cloud)
     {
-        this.cloud = nube;
+        this.cloud = cloud;
     }
 
-    public Cliente getClient()
+    public Client getClient()
     {
         return client;
     }
 
-    public void setClient(Cliente client)
+    public void setClient(Client client)
     {
         this.client = client;
     }
 
-    public Calificacion getScore()
+    public Score getScore()
     {
         return score;
     }
 
-    public void setScore(Calificacion score)
+    public void setScore(Score score)
     {
         this.score = score;
     }

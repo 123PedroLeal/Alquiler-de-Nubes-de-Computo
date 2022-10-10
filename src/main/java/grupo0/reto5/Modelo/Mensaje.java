@@ -28,12 +28,12 @@ public class Mensaje implements Serializable
     @ManyToOne
     @JoinColumn(name = "idCloud")
     @JsonIgnoreProperties({"messages","reservations"})
-    private Nube cloud;
+    private Cloud cloud;
 
     @ManyToOne
     @JoinColumn(name = "idClient")
     @JsonIgnoreProperties({"messages","reservations"})
-    private Cliente client;
+    private Client client;
 
     public Integer getIdMessage()
     {
@@ -55,22 +55,22 @@ public class Mensaje implements Serializable
         this.messageText = messageText;
     }
 
-    public Nube getCloud()
+    public Cloud getCloud()
     {
         return cloud;
     }
 
-    public void setCloud(Nube nube)
+    public void setCloud(Cloud cloud)
     {
-        this.cloud = nube;
+        this.cloud = cloud;
     }
 
-    public Cliente getClient()
+    public Client getClient()
     {
         return client;
     }
 
-    public void setClient(Cliente client)
+    public void setClient(Client client)
     {
         this.client = client;
     }
