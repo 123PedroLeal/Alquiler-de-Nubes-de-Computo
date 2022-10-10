@@ -22,8 +22,8 @@ public class ClientService
     }
 
     //Metodo para obtener un solo objeto de tipo nube en el repositorio.
-    public Optional<Client> getCliente(int id) {
-        return clientRepository.getCliente(id);
+    public Optional<Client> getClient(int id) {
+        return clientRepository.getClient(id);
     }
 
     //Metodo para guardar un objeto de tipo nube que viene del repositorio.
@@ -35,7 +35,7 @@ public class ClientService
             return clientRepository.save(c);
         } else {
             // Metodo para saber que si se obtiene una Nube vacia igual guarde la operacion
-            Optional<Client> caux = clientRepository.getCliente(c.getIdClient());
+            Optional<Client> caux = clientRepository.getClient(c.getIdClient());
             if (!caux.isPresent()) {
                 return clientRepository.save(c);
             }
@@ -48,8 +48,8 @@ public class ClientService
 
     public boolean deleteClient(int id)
     {
-        Boolean c = getCliente(id).map(Cliente-> {
-            clientRepository.delete(Cliente);
+        Boolean c = getClient(id).map(Client-> {
+            clientRepository.delete(Client);
             return true;
         }).orElse(false);
         return c;
@@ -59,7 +59,7 @@ public class ClientService
     {
         if (c.getIdClient() != null)
         {
-            Optional<Client> caux = clientRepository.getCliente(c.getIdClient());
+            Optional<Client> caux = clientRepository.getClient(c.getIdClient());
             if (caux.isPresent())
             {
                 if (c.getEmail()!=null)

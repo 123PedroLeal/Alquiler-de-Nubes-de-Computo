@@ -48,7 +48,7 @@ public class ReservationRepository
     public List<CountClient> getTopClients()
     {
         List<CountClient> respuesta = new ArrayList<>();
-        List<Object[]> reporte = reservationCRUDRepository.TotalReservasporClientes();
+        List<Object[]> reporte = reservationCRUDRepository.TotalReservasporClients();
 
         for(int i=0; i<reporte.size();i++)
         {

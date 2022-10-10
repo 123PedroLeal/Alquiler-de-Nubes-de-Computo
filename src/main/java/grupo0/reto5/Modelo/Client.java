@@ -36,7 +36,7 @@ public class Client implements Serializable
     @JsonIgnoreProperties("client")
     public List <Mensaje> messages;
 
-    // Cascade sirve para que revise el mapeado de todos los datos que contengan los datos del cliente.
+    // Cascade sirve para que revise el mapeado de todos los datos que contengan los datos del client.
     @OneToMany (cascade = {CascadeType.PERSIST},mappedBy = "client")
     @JsonIgnoreProperties("client")
     public List <Reserva> reservations;

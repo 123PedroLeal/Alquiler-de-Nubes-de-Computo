@@ -1,5 +1,4 @@
 package grupo0.reto5.Modelo.DTOs;
-
 import grupo0.reto5.Modelo.Client;
 
 public class CountClient
@@ -23,12 +22,12 @@ public class CountClient
         this.total = total;
     }
 
-    public Client getCliente()
+    public Client getClient()
     {
         return client;
     }
 
-    public void setCliente(Client client)
+    public void setClient(Client client)
     {
         this.client = client;
     }

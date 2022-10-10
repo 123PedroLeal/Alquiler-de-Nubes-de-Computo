@@ -23,7 +23,7 @@ public class ClientRepository
         return (List<Client>) clientCRUDRepository.findAll();
     }
     // Metodo para obtener un objeto de tipo nube o solo hacer una petición Get a un solo objeto.
-    public Optional<Client> getCliente(int id)
+    public Optional<Client> getClient(int id)
     {
         return clientCRUDRepository.findById(id);
     }

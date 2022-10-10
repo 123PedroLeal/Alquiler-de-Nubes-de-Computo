@@ -18,7 +18,7 @@ public interface ReservationCRUDRepository extends CrudRepository<Reserva,Intege
 
     // [client,total]
     @Query("SELECT r.client,COUNT (r.client)FROM Reserva AS r GROUP BY r.client ORDER BY COUNT (r.client) DESC")
-    public List<Object[]> TotalReservasporClientes();
+    public List<Object[]> TotalReservasporClients();
 
     // SELECT * FROM RESERVA WHERE idReservation BETWEEN a AND b;
     //public void findAllByIdReservationBetweenAnd(Integer a,Integer b);
