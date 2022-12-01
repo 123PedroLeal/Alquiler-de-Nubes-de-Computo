@@ -1,7 +1,7 @@
-package MVC_Model.Repositorio;
+package MVC_Model.Repository;
 
 import MVC_Model.Model.Cloud;
-import MVC_Model.Repositorio.CRUD.CloudCRUDRepository;
+import MVC_Model.Repository.CRUD.CloudCRUDRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 

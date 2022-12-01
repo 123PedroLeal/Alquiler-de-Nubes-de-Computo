@@ -1,4 +1,4 @@
-package ModeloMVC.Modelo.DTOs;
+package MVC_Model.Model.DTOs;
 
 public class CountStatus
 {

@@ -1,7 +1,7 @@
-package MVC_Model.Servicio;
+package MVC_Model.Service;
 
 import MVC_Model.Model.Admin;
-import MVC_Model.Repositorio.AdminRepository;
+import MVC_Model.Repository.AdminRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
-package MVC_Model.Servicio;
+package MVC_Model.Service;
 import MVC_Model.Model.Reservation;
-import MVC_Model.Repositorio.ReservationRepository;
+import MVC_Model.Repository.ReservationRepository;
 import MVC_Model.Model.DTOs.CountClient;
 import MVC_Model.Model.DTOs.CountStatus;
 import org.springframework.beans.factory.annotation.Autowired;

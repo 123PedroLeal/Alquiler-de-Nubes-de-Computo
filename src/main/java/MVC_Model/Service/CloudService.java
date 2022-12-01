@@ -1,8 +1,8 @@
-package MVC_Model.Servicio;
+package MVC_Model.Service;
 
 
 import MVC_Model.Model.Cloud;
-import MVC_Model.Repositorio.CloudRepository;
+import MVC_Model.Repository.CloudRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

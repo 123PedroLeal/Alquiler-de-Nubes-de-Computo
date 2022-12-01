@@ -1,8 +1,8 @@
-package MVC_Model.Servicio;
+package MVC_Model.Service;
 
 
 import MVC_Model.Model.Client;
-import MVC_Model.Repositorio.ClientRepository;
+import MVC_Model.Repository.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,8 +1,8 @@
-package ModeloMVC.Web;
+package MVC_Model.Web;
 
 
-import ModeloMVC.Servicio.CloudService;
-import ModeloMVC.Modelo.Cloud;
+import MVC_Model.Service.CloudService;
+import MVC_Model.Model.Cloud;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

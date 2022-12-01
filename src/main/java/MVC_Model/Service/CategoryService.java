@@ -1,8 +1,8 @@
-package MVC_Model.Servicio;
+package MVC_Model.Service;
 
 
 import MVC_Model.Model.Category;
-import MVC_Model.Repositorio.CategoryRepository;
+import MVC_Model.Repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

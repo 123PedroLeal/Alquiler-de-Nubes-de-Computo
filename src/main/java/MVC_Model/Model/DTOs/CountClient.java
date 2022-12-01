@@ -1,5 +1,5 @@
-package ModeloMVC.Modelo.DTOs;
-import ModeloMVC.Modelo.Client;
+package MVC_Model.Model.DTOs;
+import MVC_Model.Model.Client;
 
 public class CountClient
 {

@@ -1,10 +1,10 @@
-package MVC_Model.Repositorio;
+package MVC_Model.Repository;
 
 
 import MVC_Model.Model.Client;
 import MVC_Model.Model.DTOs.CountClient;
 import MVC_Model.Model.Reservation;
-import MVC_Model.Repositorio.CRUD.ReservationCRUDRepository;
+import MVC_Model.Repository.CRUD.ReservationCRUDRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 

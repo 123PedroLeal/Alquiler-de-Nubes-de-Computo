@@ -1,8 +1,8 @@
-package ModeloMVC.Web;
+package MVC_Model.Web;
 
 
-import ModeloMVC.Modelo.Admin;
-import ModeloMVC.Servicio.AdminService;
+import MVC_Model.Model.Admin;
+import MVC_Model.Service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

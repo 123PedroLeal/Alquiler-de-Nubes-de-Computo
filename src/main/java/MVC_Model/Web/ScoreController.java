@@ -1,8 +1,8 @@
-package ModeloMVC.Web;
+package MVC_Model.Web;
 
 
-import ModeloMVC.Servicio.ScoreService;
-import ModeloMVC.Modelo.Score;
+import MVC_Model.Service.ScoreService;
+import MVC_Model.Model.Score;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

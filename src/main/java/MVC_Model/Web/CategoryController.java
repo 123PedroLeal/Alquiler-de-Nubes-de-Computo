@@ -1,8 +1,8 @@
-package ModeloMVC.Web;
+package MVC_Model.Web;
 
 
-import ModeloMVC.Servicio.CategoryService;
-import ModeloMVC.Modelo.Category;
+import MVC_Model.Service.CategoryService;
+import MVC_Model.Model.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

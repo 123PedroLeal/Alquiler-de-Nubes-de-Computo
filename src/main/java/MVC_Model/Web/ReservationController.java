@@ -1,10 +1,10 @@
-package ModeloMVC.Web;
+package MVC_Model.Web;
 
 
-import ModeloMVC.Modelo.DTOs.CountClient;
-import ModeloMVC.Modelo.DTOs.CountStatus;
-import ModeloMVC.Modelo.Reservation;
-import ModeloMVC.Servicio.ReservationService;
+import MVC_Model.Model.DTOs.CountClient;
+import MVC_Model.Model.DTOs.CountStatus;
+import MVC_Model.Model.Reservation;
+import MVC_Model.Service.ReservationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

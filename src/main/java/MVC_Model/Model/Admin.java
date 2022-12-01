@@ -1,4 +1,4 @@
-package ModeloMVC.Modelo;
+package MVC_Model.Model;
 
 import javax.persistence.*;
 import java.io.Serializable;

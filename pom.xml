@@ -8,11 +8,11 @@
         <version>2.7.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>Grupo0</groupId>
-    <artifactId>Reto3</artifactId>
+    <groupId>PL</groupId>
+    <artifactId>Cloud-Rental</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Reto3</name>
-    <description>Reto3</description>
+    <name>Alquiler de Nubes de Computo</name>
+    <description>Alquiler de Nubes de Computo</description>
     <properties>
         <java.version>11</java.version>
     </properties>

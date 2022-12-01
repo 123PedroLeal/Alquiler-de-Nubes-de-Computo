@@ -1,4 +1,4 @@
-package MVC_Model.Repositorio.CRUD;
+package MVC_Model.Repository.CRUD;
 
 
 import MVC_Model.Model.Category;
